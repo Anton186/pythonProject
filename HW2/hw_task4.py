@@ -4,5 +4,10 @@ n = int(input("Введите число: "))
 sp = []
 for i in range(-n, n+1):
     sp.append(i)
-print("тут список", sp)
-sum = 0
+f = open("file.txt")
+lt=(f.readlines())
+lt=[int(x) for x in lt]
+sum = 1
+for i in range(len(lt)):
+    sum = sum * sp[lt[i]]
+print(sum)
