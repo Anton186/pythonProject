@@ -44,3 +44,29 @@
 #     print(i,end=" ")
 #
 # на вход дробь
+
+
+# x, y = [int(i) for i in input().split()] # ввести 2 числа и считать как числа
+
+#словарь наполнить
+# slovar = {}
+# slovar["city"] = "Moscow"
+# print(slovar)
+
+# # Обращение к словарю
+# access = {'login': 'ivan', 'password': '123'}
+# login = input('Введите логин ')
+# password = input('Введите пароль ')
+# if login == access['login'] and password == access['password']:
+#     print('Вход разрешен')
+
+
+# sp = [1, 1, 1, 4, 2, 5, 5, 5, 4]
+# slov = {}
+# for el in sp:
+#     if el not in slov:
+#         slov[el] = 1
+#     else:
+#         slov[el] +=1
+# print(slov)
+# print(slov.get(2, "жопа")) #ищет 2, пишет сколько раз встретилось 2, если нет пишет жопа
