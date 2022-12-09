@@ -6,32 +6,32 @@
 # 5, 8, 13, 21] [Негафибоначчи]
 
 
-num = int(input('Введите целое число: '))
+# num = int(input('Введите целое число: '))
 
 
-def fib(n):
-    if n in [1, 2]:
-        return 1
-    else:
-        return fib(n - 1) + fib(n - 2)
-
-
-def neg_fib(n):
-    if n == 0:
-        return 0
-    if n == 1:
-        return neg_fib(n - 1) + 1
-    else:
-        return (neg_fib(n - 2) - neg_fib(n - 1))
-
-
-list_fib = []
-for el in range(1, num + 1):
-    list_fib.append(fib(el))
-
-list_neg_fib = []
-for el in range(0, num + 1):
-    list_neg_fib.append(neg_fib(el))
-list_neg_fib.reverse()
-
-print(list_neg_fib + list_fib)
+# def fib(n):
+#     if n in [1, 2]:
+#         return 1
+#     else:
+#         return fib(n - 1) + fib(n - 2)
+#
+#
+# def neg_fib(n):
+#     if n == 0:
+#         return 0
+#     if n == 1:
+#         return neg_fib(n - 1) + 1
+#     else:
+#         return (neg_fib(n - 2) - neg_fib(n - 1))
+#
+#
+# list_fib = []
+# for el in range(1, num + 1):
+#     list_fib.append(fib(el))
+#
+# list_neg_fib = []
+# for el in range(0, num + 1):
+#     list_neg_fib.append(neg_fib(el))
+# list_neg_fib.reverse()x
+#
+# print(list_neg_fib + list_fib)
