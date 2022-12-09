@@ -33,7 +33,7 @@ def separate_mn(sp_mn):
                 slov[f"x{cort[1]}"] = "1"
             else:
                 slov[f"x{cort[1]}"] = f"{cort[0]}"
-        elif "'"x" in el:
+        elif "x" in el:
             cort = el.split("x")
             if cort[0] == '':
                 slov[f"x{cort[1]}"] = "1"
