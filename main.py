@@ -97,12 +97,17 @@
 # лук порезать кольцами
 # зажарить всё
 
-n= 5
-sp=[]
-for i in range(5):
-    sp.append(input())
-print(sp)
-sp = list(filter(lambda x: "лук" not in x, sp))
-sp.sort(key = lambda x: len(x))
-print(*sp,sep=", ")
-print(", ".join(sp))
+# n= 5
+# sp=[]
+# for i in range(5):
+#     sp.append(input())
+# print(sp)
+# sp = list(filter(lambda x: "лук" not in x, sp))
+# sp.sort(key = lambda x: len(x))
+# print(*sp,sep=", ")
+# print(", ".join(sp))
+
+# sp = ['a', 'b', 'c'] #нумерация списка и вывод его
+# for i, el in enumerate(sp, 1):
+#     print(i, el)
+

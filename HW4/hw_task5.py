@@ -2,7 +2,7 @@
 # Даны два файла, в каждом из которых находится запись многочлена. Задача -
 # сформировать файл, содержащий сумму многочленов.
 
-with open("file1.txt.txt") as f1:  # получаем 1й многочлен
+with open("file1.txt") as f1:  # получаем 1й многочлен
     first_mn = f1.read()
 
 with open("file2.txt") as f2:  # получаем 2й многочлен
@@ -87,5 +87,5 @@ result = " + ".join(create_mn(res_sl)) + " = 0"
 print("\nСумма многочленов равна: ")
 print(result)
 
-with open("for_task_5_fin.txt", "w") as file:
+with open("file3.txt", "w") as file:
     file.write(result)
