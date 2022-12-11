@@ -7,3 +7,28 @@
 # a) Добавьте игру против бота
 #
 # b) Подумайте как наделить бота ""интеллектом""
+
+import random
+konfety = int(input("Введите количество конфет на столе: "))
+maxtake = int(input("Введите максимальное количество забранных конфет за ход: "))
+igrok = random.randint(1, 2)
+print(f"Жеребьёвкой определен первый ход игрока: {igrok}\nКонфет на столе:{konfety}\nМаксимально можно взять конфет за ход:{maxtake}")
+while konfety > maxtake:
+    if igrok == 1:
+        take = int(input("Игрок 1, введите количество конфет: "))
+        while not 0 < take < maxtake+1:
+            take = int(input(f"Можно взять не менее одной и не более {maxtake} конфет! Введите количество конфет: "))
+        else:
+            konfety = konfety - take
+        print("Конфет осталось:", konfety)
+        igrok = 2
+    else:
+        take = int(input("Игрок 2, введите количество конфет: "))
+        while not 0 < take < maxtake+1:
+             take = int(input(f"Можно взять не менее одной и не более {maxtake} конфет! Введите количество конфет: "))
+        else:
+             konfety = konfety - take
+        print("Конфет осталось:", konfety)
+        igrok = 1
+else:
+    print("Победил игрок:", igrok)

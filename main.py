@@ -110,4 +110,8 @@
 # sp = ['a', 'b', 'c'] #нумерация списка и вывод его
 # for i, el in enumerate(sp, 1):
 #     print(i, el)
-
+sp = [1, 2, 3, 8, 55, 38]
+def f(x):
+    return x**3
+list = [f(i) for i in range(1, sp) if i %2 ==0]
+print(list)
