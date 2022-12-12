@@ -58,4 +58,3 @@ konfety = konfety - take
 print("осталось", konfety)
 if konfety <= maxtake:
     take = maxtake
-elif
