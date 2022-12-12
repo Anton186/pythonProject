@@ -9,8 +9,8 @@
 # b) Подумайте как наделить бота ""интеллектом""
 
 import random
-konfety = int(input("Введите количество конфет на столе: "))
-maxtake = int(input("Введите максимальное количество забранных конфет за ход: "))
+konfety = 50#int(input("Введите количество конфет на столе: "))
+maxtake = 21#int(input("Введите максимальное количество забранных конфет за ход: "))
 igrok = random.randint(1, 2)
 print(f"Жеребьёвкой определен первый ход игрока: {igrok}\nКонфет на столе:{konfety}\nМаксимально можно взять конфет за ход:{maxtake}")
 while konfety > maxtake:
@@ -32,3 +32,30 @@ while konfety > maxtake:
         igrok = 1
 else:
     print("Победил игрок:", igrok)
+take = (konfety%maxtake)
+print(f"берём --  {take}")
+konfety = konfety - take
+print("осталось", konfety)
+take = (konfety%maxtake)
+print(f"берём --  {take}")
+konfety = konfety - take
+print("осталось", konfety)
+take = (konfety%maxtake)
+print(f"берём --  {take}")
+konfety = konfety - take
+print("осталось", konfety)
+if konfety % maxtake == 0:
+    take = maxtake
+konfety = konfety - take
+print("осталось", konfety)
+if konfety % maxtake == 0:
+    take = maxtake
+konfety = konfety - take
+print("осталось", konfety)
+if konfety % maxtake == 0:
+    take = maxtake
+konfety = konfety - take
+print("осталось", konfety)
+if konfety <= maxtake:
+    take = maxtake
+elif
