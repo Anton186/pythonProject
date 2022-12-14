@@ -1,0 +1,1 @@
+23:38:07,937 root WARNING Ну прям совсем жопа, не получилось ничего, invalid literal for int() with base 10: 'авыа'
