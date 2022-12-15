@@ -14,3 +14,19 @@
 # ОРРОРОРООРРРО 3
 # ООООООРРРОРОРРРРРРР 7
 # ООООРРРРОРОРРРРРРРРООРОРОРРРРРРРРРРРРРРРРРРРРРРРРРРРРРРР 31
+# ООРРОРОРОРРРРОО
+text = []
+max = 0
+temp_max =0
+text = input("Введи строку : ")
+for i in range(len(text)):
+    if text[i] == "Р":
+        temp_max += 1
+    else:
+        if temp_max > max:
+            max = temp_max
+        temp_max = 0
+if temp_max > max:
+    max = temp_max
+print(f"Наибольшее количество подряд выпавших решек: {max}")
+
