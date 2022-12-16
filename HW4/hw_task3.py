@@ -16,3 +16,5 @@ for key, value in sl.items():
         res_list.append(int(key))
 
 print(res_list)
+
+
