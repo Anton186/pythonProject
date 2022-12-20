@@ -33,3 +33,6 @@ def main():
         if select == 1:
             sotr = models.get_lists_txt()
             view.show_employees_txt(sotr)
+        if select == 2:
+            data = view.add_employees()
+            models.add_employees_to_list_txt(data)
