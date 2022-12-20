@@ -16,3 +16,7 @@
 # Фамилия_2,Имя_2,Телефон_2,Описание_2
 # и т.д.
 # Полезный источник о работе с файлами CSV: https://all-python.ru/osnovy/csv.html
+
+import controller
+
+controller.main()
