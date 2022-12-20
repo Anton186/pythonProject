@@ -5,17 +5,15 @@ import logging
 def get_lists_csv():
     with open('spravochnik.csv', encoding="utf8") as csvfile:
         reader = csv.reader(csvfile, delimiter=';', )
-        #title = next(reader)
-        logging.info("что нибудь")
+        # title = next(reader)
         return list(reader)
 
 
 def get_lists_txt():
     with open('spravochnik.txt', encoding="utf8") as txtfile:
         reader = txtfile.readlines()
-        #title = next(reader)
+        # title = next(reader)
         return list(reader)
-
 
 
 def add_employees_to_list_csv(employees):
@@ -23,12 +21,11 @@ def add_employees_to_list_csv(employees):
         writer = csv.writer(csvfile, delimiter=';')
         writer.writerow(employees)
 
+
 def add_employees_to_list_txt(employees):
     with open('spravochnik.txt', 'a', encoding="utf8", newline='\n', ) as txtfile:
         for i in range(len(employees)):
             txtfile.write(f"{(employees[i])}\n")
-
-
 
 
 def update_employees_csv(number, string):
