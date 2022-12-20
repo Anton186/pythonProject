@@ -26,7 +26,7 @@ def add_employees_to_list_csv(employees):
 def add_employees_to_list_txt(employees):
     with open('spravochnik.txt', 'a', encoding="utf8", newline='\n', ) as txtfile:
         for i in range(len(employees)):
-            txtfile.write(f"\n{(employees[i])}")
+            txtfile.write(f"{(employees[i])}\n")
 
 
 
