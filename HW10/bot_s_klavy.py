@@ -73,7 +73,7 @@ def play_step(update, context):
         update.message.reply_text(f"На кону {candies} конфет, я беру {candies % (step + 1)}")
         candies -= candies % (step + 1)
         if candies <= step:
-            update.message.reply_text("Поздравляю, ты победил!!!", reply_markup=markup)
+            update.message.reply_text("Поздравляю! Ты победил!!!", reply_markup=markup)
             return ConversationHandler.END
 
 
