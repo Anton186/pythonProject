@@ -49,7 +49,9 @@ def delete():
 def export_employees():
     print("\nВведите номера сотрудников для экспорта в другой файл через пробел: ", end='')
     numbers = [int(n) for n in input().split()]
+    print(numbers)
     return numbers
+
 
 
 def expotr(exp, not_exp):
